@@ -1,0 +1,47 @@
+body{
+    background-image: url("{{static}}/static/Icon.jpeg");
+    background-repeat:round;
+    background-size: contain;
+}
+nav ul{
+    margin-left: auto;
+}
+nav ul li{
+    margin-left: 10px;
+
+}
+
+#intro,#result
+{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    background:  rgba(133, 70, 70, 0.1);
+    box-shadow: 10px 10px 10px rgba(161, 137, 137, 0.1);
+    padding: 3rem;
+}
+
+#syllabus
+{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    background:  rgba(111, 22, 22, 0.1);
+    box-shadow: 10px 10px 10px rgba(161, 137, 137, 0.1);
+    padding: 3rem;
+}
+
+#intro:hover
+{
+    transform: scale(1.05,1.05);
+}
+
+#syllabus:hover
+{
+    transform: scale(1.05,1.05);
+}
+
+#result:hover
+{
+    transform: scale(1.05,1.05);
+}
