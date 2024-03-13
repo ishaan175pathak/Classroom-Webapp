@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-secondary bg-secondary">
         <div class="navbar-brand">
-            <img src="{{static}}/static/Icon.jpeg" class="rounded-circle" alt="Logo" style="height: 50px;width: 50px;">
+            <img src="../Static/Icon.jpeg" class="rounded-circle" alt="Logo" style="height: 50px;width: 50px;">
         </div>
 
         <div class="container">
@@ -32,7 +32,7 @@
         </div>
 
         <ul class="navbar nav">
-            <li class="navbar-item"><a href="/classroom/faculty/{{information.name}}/" class="btn btn-secondary">Home</a></li>
+            <li class="navbar-item"><a href="classroom_faculty.html" class="btn btn-secondary">Home</a></li>
             <li class="navbar-item"><a href="/logout/" class="btn btn-danger">Logout</a></li>
         </ul>
     </nav>
@@ -40,7 +40,7 @@
         
     <form action="" method="post">
         <div class="form-group" style="display: none;">
-            <input type="text" id="sname" name="sname" value="{{information.name}}">
+            <input type="text" id="sname" name="sname" value="Name">
         </div>
         <div class="form-group">
             <label for="notice"><b>Notice</b></label>
@@ -53,14 +53,14 @@
         <div class="form-group">
             <select class="form-control" name="Class" id="Class">
                 
-                    <option value="{{dat.Class}}">{{dat.Class}}</option>
+                    <option value="Class">Class</option>
                 
             </select>
         </div>
         <div class="form-group">
             <select class="form-control" name="section" id="section">
                 
-                    <option value="{{dat.section}}">{{dat.section}}</option>
+                    <option value="Section">Section</option>
                 
             </select>
         </div>
@@ -69,7 +69,7 @@
     </div>
     <div class="container">
         
-            <div class="alert alert-success">{{message}}</div>
+            <div class="alert alert-success">Status</div>
         
     </div>
 </body>

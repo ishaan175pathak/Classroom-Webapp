@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student's Section</title>
-    <link rel="icon" href="{{static}}/static/Icon.jpeg">
+    <link rel="icon" href="../Static/Icon.jpeg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../StyleSheets/Student/Classroom_student.css" type="text/css">
 
@@ -22,13 +22,8 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-secondary bg-info">
-        <h3 class="container-fluid" style="color: white;">Welcome
-            {% if information %}
-                {{information.regis.name}}
-                 {{information.Class}}
-                {{information.section}}
-
-            {% endif %}
+        <h3 class="container-fluid" style="color: white;">
+            Welcome Student Name
         </h3>
         <ul class="navbar-nav">
 
@@ -38,10 +33,10 @@
             <li class="navbar-item dropdown">
 
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                    <img src="{{static}}/static/Icon.jpeg" class="rounded-circle" alt="Logo" style="height: 50px;width: 50px;">
+                    <img src="../Static/Icon.jpeg" class="rounded-circle" alt="Logo" style="height: 50px;width: 50px;">
                 </a>
                 <div class="dropdown-menu">
-                    {% if information %}<a href="/classroom/student/{{information.regis.name}}/studentPage/" class="dropdown-item">Home</a>{% endif %}
+                    <a href="/classroom/student/{{information.regis.name}}/studentPage/" class="dropdown-item">Home</a>
                     <a href="/logout/" class="dropdown-item">Sign out</a>
                 </div>
             </li>
@@ -86,7 +81,7 @@
                         <td>
                             <a href="/classroom/student/{{dat.pk}}/{{information.regis.name}}/" class="btn btn-info">Submit</a>
                             <br>
-                            <small>dat.status</small>
+                            <small>status</small>
                         </td>
                     </tr>
                 </div>

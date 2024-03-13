@@ -1,0 +1,96 @@
+body{
+    position: relative;
+}
+
+.display{
+    font-size: small;
+    text-align: right;
+}
+nav ul {
+    margin-left: auto;
+}
+
+#first,#second,#third
+{
+    margin-top: 0.2rem;
+    float: left;
+    padding-left: 2.5%;
+    height: 100%;
+}
+
+#first,#third
+{
+    width: 30%;
+}
+
+#second
+{
+    width: 40%;
+}
+
+.fit-content{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px 50px 50px 50px;
+}
+
+#doubts{
+    padding: 0.5rem;
+    box-sizing: border-box;
+    position: sticky;
+    box-shadow: 0 4px 4px 0 rgba(128, 7, 242, 0.11);
+    border-radius: 50px;
+}
+
+#third
+{
+    position: relative;
+}
+
+
+#descrip
+{
+    transform: translateX(310px);
+    position: fixed;
+    width: 15rem;
+    height: auto;
+    bottom: 8em;
+    right: 3em;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(235, 244, 244);
+    box-shadow: 2px 2px 2px 2px rgba(55, 131, 131, 0.5);
+    border-radius: 0.5em 0.5em 0em 0.5em;
+    transition: transform 0.5s linear;
+}
+
+#meet-btn a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#meet-btn{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    bottom: 3em;
+    position: fixed;
+    box-shadow: 0 0 0 0 rgba(128, 7, 242, 0.11);
+    right: 3em;
+}
+
+h2
+{
+    color: whitesmoke;
+}
+
+#send{
+    margin: 15px;
+}
+
+#search{
+    margin: 1px auto auto -40px;
+    background-color: cyan;
+    border-radius: 50%;
+}
