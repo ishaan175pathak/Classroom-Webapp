@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission</title>
+    <link rel="icon" href="../../Static/Icon.jpeg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    
+    <style>
+        nav li{
+            padding-left: 0.2rem;
+        }
+
+        table tr,td{
+            padding:0 2em 0 2em;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-info bg-info">
+        <h3 class="container" style="color:white;">
+           Welcome Name
+        </h3>
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <a href="classroom_faculty.html">
+                    <button class="btn btn-secondary">Home</button>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="../login.html">
+                    <button class="btn btn-danger">Logout</button>
+                </a>
+            </li>
+        </ul>
+    </nav>   
+    <div class="navbar navbar-expand-sm bg-info">
+        <div class="form-inline">
+            <input type="text" id="search" name="search" class="form-control mr-sm-2" placeholder="Search file by Class">
+            <button type="button" onclick="filterquery()" class="btn btn-success">Search</button>
+        </div>
+    </div>
+    <div class="container text-center" id="display">
+        <div><span class="spinner-grow text-muted"></span> Fetching Data</div>
+    </div>
+
+    <script src="../../JavaScripts/Faculty/viewSubmission.js"></script>
+
+</body>
+</html>

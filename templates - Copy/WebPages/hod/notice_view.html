@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice_view</title>
+    <link rel="shortcut icon" href="../../Static/Icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="{{static}}/static/jquery-3.5.0.min.js"></script>
+    <style>
+        nav ul li{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-secondary bg-secondary">
+        <div class="navbar-brand">
+            <img src="../../Static/Icon.jpeg" class="rounded-circle" alt="Logo" style="height: 50px;width: 50px;">
+        </div>
+        <div class="container">
+            <h2 style="color: white;">Head Of Department</h2>
+        </div>
+        <ul class="navbar nav">
+            <li class="navbar-item"><a href="principal.html" class="btn btn-secondary">Home</a></li>
+            <li class="navbar-item"><a href="../login.html" class="btn btn-danger">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container text-center" id="show">
+        <div class="container"><span class="spinner-border text-primary"></span>Fetching Data</div>
+    </div>
+    
+    <script src="..//..//JavaScripts//Faculty//notice_view.js"></script>
+</body>
+</html>
