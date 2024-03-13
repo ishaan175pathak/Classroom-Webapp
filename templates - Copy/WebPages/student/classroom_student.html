@@ -17,8 +17,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
-    <script src="../../JavaScripts/Student/Classroom_student.js" type="text/html"></script>
-
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-secondary bg-info">
@@ -31,13 +30,13 @@
                 <button class="btn" id="button" data-toggle="modal" data-target="#link">Link</button>
             </li>
             <li class="navbar-item dropdown">
-
+                
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                     <img src="../Static/Icon.jpeg" class="rounded-circle" alt="Logo" style="height: 50px;width: 50px;">
                 </a>
                 <div class="dropdown-menu">
                     <a href="/classroom/student/{{information.regis.name}}/studentPage/" class="dropdown-item">Home</a>
-                    <a href="/logout/" class="dropdown-item">Sign out</a>
+                    <a href="../login.html" class="dropdown-item">Sign out</a>
                 </div>
             </li>
         </ul>
@@ -101,8 +100,8 @@
                             <select name="receiver" id="receiver" class="form-control">
                                 
                                     <option value="Student Name">Student Name</option>
-                                
-                                <hr>
+                                    
+                                    <hr>
                                 
                                     <option value="Faculty Name">Faculty Name</option>
                                 
@@ -114,7 +113,8 @@
                     </div>
                     <button id="send" onclick="postDoubts()" style="border-radius: 25%;height: fit-content;width: fit-content;background:lightgreen;">send</button>
                 </div>
+            </div>
         </div>
-    </div>
+        <script src="../../JavaScripts/Student/Classroom_student.js"></script>
 </body>
 </html>
