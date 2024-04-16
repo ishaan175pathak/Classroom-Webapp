@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submission</title>
+    <link rel="icon" href="../Static/Icon.jpeg" />
+
+    <link rel="stylesheet" href="/StyleSheets/Nav.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="/JavaScripts/Faculty/viewSubmission.js"></script>
+
+    <style>
+      body {
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+      body {
+        background-image: url("/icon/Colorful\ Illustrative\ School\ Zoom\ Virtual\ Background_20240405_143303_0004.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .login-circle {
+        margin-left: auto;
+      }
+      #search {
+        margin-left: 10px;
+        border-style: solid;
+        border-color: rgb(88, 84, 84);
+        border-width: 2px;
+      }
+      table tr,
+      td {
+        padding: 0 2em 0 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Code -->
+
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <img src="/icon/Icon.jpeg" class="rounded-circle" alt="Logo" />
+        <a class="navbar-brand" id="Webname" href="#">IntelliLink Classroom</a>
+        <a class="home" href="../faculty/classroom_faculty.html">
+          <img
+            src="/icon/noun-house-635837.png"
+            class="login-circle"
+            alt="Login"
+        /></a>
+        <a href="../index.html">
+          <img
+            src="/icon/noun-logout-1027097.png"
+            class="login-circle"
+            alt="Login"
+        /></a>
+      </div>
+    </nav>
+    <div>
+      <div class="form-inline">
+        <input
+          type="text"
+          id="search"
+          name="search"
+          class="form-control mr-sm-2"
+          placeholder="Search file by Class"
+        />
+        <button type="button" onclick="filterquery()" class="btn btn-success">
+          Search
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div class="container text-center" id="display" style="margin-top: 20px">
+      <div><span class="spinner-grow text-muted"></span> Fetching Data</div>
+    </div>
+  </body>
+</html>

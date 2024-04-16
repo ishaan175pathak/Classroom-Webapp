@@ -1,0 +1,19 @@
+#Webname {
+  margin-right: 60px;
+}
+.contianer {
+  margin-top: 100px;
+}
+.media {
+  background-color: rgb(250, 235, 215, 0.4);
+}
+.text {
+  margin: 20px;
+  text-align: center;
+}
+.login-circle {
+  margin: 0;
+}
+.media:hover {
+  background-color: rgb(250, 235, 215);
+}
