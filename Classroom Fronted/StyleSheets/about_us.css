@@ -1,0 +1,21 @@
+body {
+  background-image: url("../icon/Colorful\ Illustrative\ School\ Zoom\ Virtual\ Background_20240405_143303_0004.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Webname {
+  margin-right: 60px;
+}
+.contianer {
+  margin-top: 100px;
+}
+.media {
+  background-color: rgb(250, 235, 215);
+}
+.text {
+  margin: 20px;
+  text-align: center;
+}
+.login-circle {
+  margin: 0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allotment</title>
+    <link rel="icon" href="../Static/Icon.jpeg" />
+    <link rel="stylesheet" href="/StyleSheets/Nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+      .login-circle {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Code -->
+
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <img src="/icon/Icon.jpeg" class="rounded-circle" alt="Logo" />
+        <a class="navbar-brand" id="Webname" href="#">IntelliLink Classroom</a>
+        <a class="home" href="../index.html" data-toggle="tooltip" title="Home">
+          <img
+            src="/icon/noun-house-635837.png"
+            class="login-circle"
+            alt="Login"
+        /></a>
+        <a href="../index.html" data-toggle="tooltip" title="Logout">
+          <img
+            src="/icon/noun-logout-1027097.png"
+            class="login-circle"
+            alt="Login"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Creating a allotment form-->
+    <div class="container">
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <select name="name" id="name" class="form-control">
+            <option value="Name">Name</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="class">Class</label>
+          <select name="class" id="class" class="form-control">
+            <option value="BCA 1st">Semester 1</option>
+            <option value="BCA 2nd">Semester 2</option>
+            <option value="BCA 3rd">Semester 3</option>
+            <option value="BCA 4th">Semester 4</option>
+            <option value="BCA 5th">Semester 5</option>
+            <option value="BCA 6th">Semester 6</option>
+            <option value="BCA 7th">Semester 7 (Hons)</option>
+            <option value="BCA 8th">Semester 8 (Hons)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="section" id="section" class="form-control">
+            <option value="A">A</option>
+            <option value="B">B</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            class="form-control"
+            placeholder="Subject"
+          />
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+      <div>Status</div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

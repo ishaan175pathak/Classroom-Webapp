@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty's Section</title>
+
+    <link rel="icon" href="../Static/Icon.jpeg" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="/StyleSheets/Faculty/classroom_faculty.css" />
+    <link rel="stylesheet" href="/StyleSheets/Nav.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <script src="/JavaScripts/Faculty/classroom_faculty.js"></script>
+
+    <style>
+      body {
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+      .login-circle {
+        margin-left: auto;
+      }
+      .home {
+        margin: auto;
+      }
+
+      .login-circle {
+        margin: auto;
+      }
+      .right-icon {
+        float: right;
+      }
+      #Webname {
+        margin-right: 670px;
+      }
+      #descrip {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Code -->
+
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <img src="/icon/Icon.jpeg" class="rounded-circle" alt="Logo" />
+        <a class="navbar-brand" id="Webname" href="#">IntelliLink Classroom</a>
+        <div class="right-icon">
+          <a
+            class="home"
+            href="../faculty/classroom_faculty_queries.html"
+            data-toggle="tooltip"
+            title="Queries"
+          >
+            <img
+              src="/icon/noun-queries-4750928.png"
+              class="login-circle"
+              alt="Login"
+          /></a>
+          <a
+            class="home"
+            href="../faculty/viewSubmission.html"
+            data-toggle="tooltip"
+            title="View Submission"
+          >
+            <img
+              src="/icon/noun-submission-5993860.png"
+              class="login-circle"
+              alt="Login"
+          /></a>
+          <a
+            href="../faculty/make_assignment.html"
+            data-toggle="tooltip"
+            title="Assignment"
+          >
+            <img
+              src="/icon/noun-assignment-3202075.png"
+              class="login-circle"
+              alt="Login"
+          /></a>
+          <a
+            href="../faculty/StudentEnroll.html"
+            data-toggle="tooltip"
+            title="Student Enroll"
+          >
+            <img
+              src="/icon/noun-add-user-4242718.png"
+              class="login-circle"
+              alt="Login"
+          /></a>
+
+          <a href="../index.html" data-toggle="tooltip" title="Logout">
+            <img
+              src="/icon/noun-logout-1027097.png"
+              class="login-circle"
+              alt="Login"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="container" id="first" style="text-align: left">
+        <div class="container-fluid">
+          Classes Alloted to the Faculty
+          <table class="table table-hover">
+            <tr>
+              <th>Class</th>
+              <th>Section</th>
+              <th>Subject</th>
+            </tr>
+
+            <tr>
+              <td>Class</td>
+              <td>section</td>
+              <td>subject</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="container text-center" id="second">
+        <div class="container-fluid" id="text-show">
+          <input
+            type="text"
+            name="receiver-party"
+            id="receiver-party"
+            class="form-control"
+            readonly
+          />
+        </div>
+        <div id="text">
+          <span class="spinner-grow text-muted"></span> Select an individual to
+          Chat
+        </div>
+      </div>
+      <div class="container text-center" id="third">
+        <div class="container">
+          <textarea name="doubts" id="doubts" cols="30" rows="1"></textarea>
+          <div class="row">
+            <div class="col-sm-10">
+              <select name="receiver" class="form-control" id="receiver">
+                <option value="Faculty Name">Faculty Name</option>
+
+                <option value="Student Name">Student Name</option>
+              </select>
+            </div>
+            <div class="col-sm-2">
+              <button id="search" class="btn" onclick="find_chat()">
+                <span class="fa fa-search"></span>
+              </button>
+            </div>
+          </div>
+          <button
+            id="send"
+            name="send"
+            onclick="postmessage()"
+            style="border-radius: 25%; background: lightgreen"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="descrip">
+      <div class="form-group">
+        <label for="class">Class</label>
+        <select name="class" id="class" class="form-control">
+          <option value="{{dat.Class}}">{{dat.Class}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="section">Section</label>
+        <select name="section" id="section" class="form-control">
+          <option value="{{dat.section}}">{{dat.section}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="link">Link</label>
+        <input type="text" name="link" id="link" class="form-control" />
+      </div>
+
+      <button
+        class="btn btn-info"
+        onclick="final_disp()"
+        style="border-radius: 3em"
+      >
+        Submit
+      </button>
+    </div>
+
+    <button class="btn btn-info" id="meet-btn" onmouseenter="display()">
+      <a href="https://meet.google.com/?hs=197&pli=1&authuser=0" target="blank"
+        ><span><i class="fas fa-video"></i></span
+      ></a>
+    </button>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
